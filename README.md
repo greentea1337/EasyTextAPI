@@ -12,7 +12,7 @@ EasyText API — это API для создания и управления те
 
 ## Установка
 
-1. Скачайте [easytextapi-1.0.jar](https://github.com/greentea1337/easytextapi/releases/latest/download/easytextapi-1.0.jar) (или соберите проект самостоятельно).
+1. Скачайте [easytextapi-1.0.jar](https://github.com/greentea1337/EasyTextAPI/releases/download/pre-release/easytextapi-1.0.jar) (или соберите проект самостоятельно).
 2. Поместите `easytextapi-1.0.jar` в папку `mods` вашего Minecraft сервера.
 
 Для добавления зависимости в ваш проект, добавьте следующее в файл `build.gradle`:
