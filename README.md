@@ -1,66 +1,65 @@
-
 # EasyText API
 
-EasyText API — это API для создания и управления текстом в Minecraft с использованием Fabric. Он позволяет разработчикам легко добавлять стили, градиенты и другие эффекты к текстовым объектам в игре.
+EasyText API is an API for creating and managing text in Minecraft using Fabric. It allows developers to easily add styles, gradients, and other effects to text objects in the game.
 
-## Особенности
+## Features
 
-- Простое создание текстовых объектов с помощью форматирования.
-- Поддержка градиентов и HEX-цветов.
-- Обработка кликовых и навигационных событий.
-- Расширяемая система тегов для форматирования.
+- Simple creation of text objects with formatting.
+- Support for gradients and HEX colors.
+- Handling of click and hover events.
+- Extensible tag system for formatting.
 
-## Установка
+## Installation
 
-1. Скачайте [easytextapi-1.0.jar](https://github.com/greentea1337/EasyTextAPI/releases/download/pre-release/easytextapi-1.0.jar) (или соберите проект самостоятельно).
-2. Поместите `easytextapi-1.0.jar` в папку `mods` вашего Minecraft сервера.
+1. Download [easytextapi-1.0.jar](https://github.com/greentea1337/EasyTextAPI/releases/download/pre-release/easytextapi-1.0.jar) (or build the project yourself).
+2. Place `easytextapi-1.0.jar` in the `mods` folder of your Minecraft server.
 
-Для добавления зависимости в ваш проект, добавьте следующее в файл `build.gradle`:
+To add the dependency to your project, include the following in your `build.gradle` file:
 
 ```groovy
 modImplementation files('c:/path/easytextapi-1.0.jar')
 ```
 
-## Использование
+## Usage
 
-### Создание текстов
+### Creating Texts
 
-#### Простой текст
-
-```java
-Text simpleText = Easytext.createSimpleText("Привет, мир!");
-```
-
-#### Стилизованный текст
+#### Simple Text
 
 ```java
-Text styledText = Easytext.createStyledText("Стилизованный текст", Formatting.BOLD, Formatting.ITALIC);
+Text simpleText = Easytext.createSimpleText("Hello, world!");
 ```
 
-#### Текст с градиентом
+#### Styled Text
 
 ```java
-Text gradientText = Easytext.createGradientText("Градиентный текст", "#FF0000", "#0000FF");
+Text styledText = Easytext.createStyledText("Styled text", Formatting.BOLD, Formatting.ITALIC);
 ```
 
-#### Текст с тегами
+#### Gradient Text
 
 ```java
-Text taggedText = Easytext.createTaggedText("<bold>Жирный текст</bold> <color=red>Красный текст</color>");
+Text gradientText = Easytext.createGradientText("Gradient text", "#FF0000", "#0000FF");
 ```
 
-### Обработка событий
-
-EasyText API также поддерживает обработку кликов и навигационных событий:
+#### Tagged Text
 
 ```java
-Text clickableText = Easytext.createTaggedText("<click action='run_command' value='/say Привет!'>Нажми на меня!</click>");
+Text taggedText = Easytext.createTaggedText("<bold>Bold text</bold> <color=red>Red text</color>");
 ```
 
-## Участие в проекте
+### Handling Events
 
-Если вы хотите внести свой вклад, пожалуйста, создайте форк репозитория и отправьте пулл-реквест с вашими изменениями.
+EasyText API also supports handling click and hover events:
 
-## Лицензия
+```java
+Text clickableText = Easytext.createTaggedText("<click action='run_command' value='/say Hello!'>Click me!</click>");
+```
 
-Этот проект лицензирован под лицензией MIT. Пожалуйста, смотрите файл [LICENSE.txt](LICENSE.txt) для получения подробной информации.
+## Contributing
+
+If you would like to contribute, please fork the repository and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License. Please see the [LICENSE.txt](LICENSE.txt) file for more information.
