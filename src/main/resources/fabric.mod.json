@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "easytextapi",
+  "version": "${version}",
+  "name": "EasyTextAPI",
+  "description": "This is a powerful and convenient API for working with text in Minecraft mods on the Fabric platform.",
+  "authors": [
+    "Nell"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.nell.easytextapi.Easytext"
+    ]
+  },
+  "mixins": [
+    "easytextapi.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
