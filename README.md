@@ -11,7 +11,7 @@ EasyText API is an API for creating and managing text in Minecraft using Fabric.
 
 ## Installation
 
-1. Download [easytextapi-1.0.jar](https://github.com/greentea1337/EasyTextAPI/releases/download/pre-release/easytextapi-1.0.jar) (or build the project yourself).
+1. Build the project yourself
 2. Place `easytextapi-1.0.jar` in the `mods` folder of your Minecraft server.
 
 To add the dependency to your project, include the following in your `build.gradle` file:
